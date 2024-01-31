@@ -18,7 +18,7 @@ jobs:
       uses: jabbukka/jenkins-trigger@main
       with:
         url: ${{ secrets.JENKINS_SERVER }}
-        job_name: "build_web_application"
+        job_name: "demo_pipeline"
         user_name: ${{ secrets.JENKINS_USERNAME }}
         api_token: ${{ secrets.JENKINS_PAT }}
         wait: "true"
