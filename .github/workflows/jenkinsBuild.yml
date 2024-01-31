@@ -14,8 +14,11 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: trigger single Job
-      uses: appleboy/jenkins-action@master
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Trigger Jenkins Pipeline
+      uses: appleboy/jenkins-job-builder-action@master
       with:
         url: ${{ secrets.JENKINS_SERVER }}
         user: ${{ secrets.JENKINS_USERNAME }}
