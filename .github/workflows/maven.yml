@@ -24,7 +24,7 @@ jobs:
           jenkins-server:  ${{ secrets.JENKINS_SERVER }}
           jenkins-job: "demo-pipeline"
           jenkins-username: ${{ secrets.JENKINS_USERNAME }}
-          jenkins-pat: ${{ secrets.JENKINS_PAT }
+          jenkins-pat: ${{ secrets.JENKINS_PAT }}
           poll-time: 10 
           timeout-value: 600
           verbose: true 
